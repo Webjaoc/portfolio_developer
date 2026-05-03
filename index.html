@@ -3,298 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta
+        name="description"
+        content="Portfolio de Jorge Oyhenart, desarrollador web  con foco en interfaces modernas, experiencia de usuario y proyectos reales en HTML, CSS, JavaScript, React, PHP y SQL."
+    >
+    <meta name="theme-color" content="#0f172a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/icons/profile/profile.png" type="image/png">
-    <title>Portfolio</title>
-</head>   
-<body class="dark">
-    <!--header-->
-    <header class="header">        
-        <div  class="switches">
-            <div id="bottons_colors" class="bottons_colors">
-                <img id="bottons_colors_icon" src="./assets/icons/sun.svg" alt="icon theme" class="bottons_colors_icon" >
-                <p id="bottons_colors_text" class="bottons_colors_text">Light Mode</p>
-            </div>
-        </div>
-        <div id="flags" class="flags" >
-            <div class="flags__item" data-language="en">
-                <img src="./assets/icons/en.png" alt="en">
-            </div>
-            <div class="flags__item" data-language="de">
-                <img src="./assets/icons/de.png" alt="de">
-            </div>
-            <div class="flags__item" data-language="es">
-                <img src="./assets/icons/es.png" alt="es">
-            </div>
-        </div>
-        <div id="toggle-colors" class="colors">
-            <div data-color="rgb(65, 120, 239)" class="colors__item colors__item--blue"></div>
-            <div data-color="rgb(65, 239, 135)" class="colors__item colors__item--green"></div>
-            <div data-color="rgb(190, 65, 239)" class="colors__item colors__item--purple"></div>
-            <div data-color="rgb(239, 172, 65)" class="colors__item colors__item--orange"></div>
-        </div>
-    </header>
-    <!--main personalcard-->
-    <main class="main">
-        <section class="column olumn--left">
-            <article class="card card--profile">
-                <div class="card__image-conteiner">
-                    <img src="./assets/icons/profile/profail.PNG" alt="foto">
+    <title>Jorge Oyhenart | Desarrollador Web</title>
+</head>
+<body data-theme="light" id="top">
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top" aria-label="Inicio">
+                <span class="brand__mark">JO</span>
+                <span class="brand__text">Jorge Oyhenart</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Secciones principales">
+                <a href="#projects" data-section="nav" data-value="projects">Proyectos</a>
+                <a href="#stack" data-section="nav" data-value="stack">Stack</a>
+                <a href="#journey" data-section="nav" data-value="journey">Trayectoria</a>
+                <a href="#contact" data-section="nav" data-value="contact">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="language-switch" id="language-switch" aria-label="Selector de idioma">
+                    <button class="language-switch__button is-active" type="button" data-language="es" aria-pressed="true">ES</button>
+                    <button class="language-switch__button" type="button" data-language="en" aria-pressed="false">EN</button>
+                    <button class="language-switch__button" type="button" data-language="de" aria-pressed="false">DE</button>
                 </div>
-                <div class="card__header">
-                    <h2 class="card__title">Jorge Oyhenart</h2>
-                    <p class="card__subtitle" data-section="profile" data-value="rol">Programador web Full stack</p>
-                </div>
-                <div class="card__body">
-                    <div class="card__link">
-                        <i class="fas fa-envelope icon"></i>
-                        <a href="mailto:oyhenartjorge@gmail.com">oyhenartjorge@gmail.com</a>
-                    </div>
-                    <div class="card__link">
-                        <i class="fas fa-phone-alt icon"></i>
-                        <a href="tel:00436606959134">+43 6606959134</a>
-                    </div>
-                    <p class="card__text" data-section="profile" data-value="description">
-                        Hola soy un diplomado en programación web,
-                        apasionado por el desarrollo de webs innovadoras y funcionales.
-                        Durante mi formación, adquirí habilidades en diversas tecnologías y
-                        metodologías de desarrollo web. Estoy ansioso por poner en práctica
-                        mis conocimientos en un entorno profesional, contribuir con soluciones
-                        creativas y aprender de los desafíos del mundo real. Busco mi primera oportunidad
-                        para crecer y desarrollarme como desarrollador web.
+
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <span class="theme-toggle__dot"></span>
+                    <span data-section="theme" data-value="label">Tema</span>
+                </button>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="hero section">
+                <div class="hero__content reveal">
+                    <p class="eyebrow" data-section="hero" data-value="eyebrow">Portfolio · Frontend &amp; Full Stack</p>
+                    <div class="hero__badge" data-section="hero" data-value="availability">Disponible para posiciones, prácticas o freelance</div>
+                    <h1 data-section="hero" data-value="title">Desarrollador web que transforma ideas en experiencias claras, rápidas y bien cuidadas.</h1>
+                    <p class="hero__lead" data-section="hero" data-value="lead">
+                        Construyo sitios y aplicaciones responsive con una base sólida en HTML, CSS, JavaScript, React, PHP y SQL. Busco incorporarme a un equipo donde aportar criterio, atención al detalle y muchas ganas de seguir creciendo.
                     </p>
-                </div>  
-            </article>
-            <!--hobbies-->    
-            <article class="card card--hobbies">
-                <h2 class="card__titlie" data-section="hobbies" data-value="title">Pasatiempos</h2>
-                <div class="card__image-container">
-                    <img src="assets/icons/walking.png" alt="walking">
+
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#projects" data-section="hero" data-value="primaryCta">Ver proyectos</a>
+                        <a class="button button--secondary" href="mailto:oyhenartjorge@gmail.com" data-section="hero" data-value="secondaryCta">Escribirme</a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <article class="stat-card">
+                            <strong>6+</strong>
+                            <span data-section="hero" data-value="statProjectsLabel">Proyectos publicados</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>3</strong>
+                            <span data-section="hero" data-value="statLanguagesLabel">Idiomas del portfolio</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>7+</strong>
+                            <span data-section="hero" data-value="statStackLabel">Tecnologías principales</span>
+                        </article>
+                    </div>
                 </div>
-                <p class="card__text" data-section="hobbies" data-value="activity">Disfruto del senderismo en familia y con amigos en la naturaleza,
-                     asi tambien como jugar al fútbol o de navegar siempre que puedo, buscando siempre actividades al aire libre.</p>
-            </article>
-            <!--experiences-->
-            <article class="card card--experience">
-                <h2 class="card__title" data-section="experience" data-value="first-job-title">Experiencia</h2>
-                <div class="experience">
-                    <img src="assets/icons/logo.png" alt="logo" class="experience__image">
-                    <div class="experience__info">
-                        <p class="experience__time" data-section="experience" data-value="first-job-dates">
-                            Aug 2022 - Jun 2024
+
+                <aside class="profile-card reveal">
+                    <div class="profile-card__media">
+                        <img src="./assets/icons/profile/profail.PNG" alt="Foto de Jorge Oyhenart">
+                    </div>
+
+                    <div class="profile-card__body">
+                        <p class="profile-card__label" data-section="profile" data-value="role">Desarrollador web</p>
+                        <h2>Jorge Oyhenart</h2>
+                        <p class="profile-card__summary" data-section="profile" data-value="summary">
+                            Perfil con mentalidad de producto, gusto por las interfaces modernas y una forma de trabajar seria, ordenada y orientada a mejorar.
                         </p>
-                        <h3 class="experience__job" data-section="experience" data-value="first-job-position">Programador web full stack</h3>
-                        <p class="experience__description" data-section="experience" data-value="first-job-descriptions">Mi primera experiencia como 
-                            programador web fue desarrollar y mantener sitios dinámicos, utilizando HTML, CSS y JavaScript, asegurando
-                             funcionalidades y experiencia de usuario óptimas.</p>
+
+                        <ul class="profile-list">
+                            <li>
+                                <span data-section="profile" data-value="locationLabel">Ubicación</span>
+                                <strong data-section="profile" data-value="locationValue">Austria · remoto o híbrido</strong>
+                            </li>
+                            <li>
+                                <span data-section="profile" data-value="focusLabel">Enfoque</span>
+                                <strong data-section="profile" data-value="focusValue">UI, responsive design y JavaScript</strong>
+                            </li>
+                            <li>
+                                <span data-section="profile" data-value="statusLabel">Objetivo</span>
+                                <strong data-section="profile" data-value="statusValue">Primer rol en desarrollo web con impacto real</strong>
+                            </li>
+                        </ul>
+
+                        <div class="contact-strip">
+                            <a href="mailto:oyhenartjorge@gmail.com">
+                                <span data-section="profile" data-value="emailLabel">Email</span>
+                                <strong>oyhenartjorge@gmail.com</strong>
+                            </a>
+                            <a href="tel:00436606959134">
+                                <span data-section="profile" data-value="phoneLabel">Teléfono</span>
+                                <strong>+43 660 6959134</strong>
+                            </a>
+                            <a href="https://github.com/Webjaoc" target="_blank" rel="noopener noreferrer">
+                                <span data-section="profile" data-value="githubLabel">GitHub</span>
+                                <strong>github.com/Webjaoc</strong>
+                            </a>
+                        </div>
                     </div>
+                </aside>
+            </section>
+
+            <section class="section" id="value">
+                <div class="section-heading reveal">
+                    <p class="section-label" data-section="highlights" data-value="label">Valor que aporto</p>
+                    <h2 data-section="highlights" data-value="title">Lo que una empresa puede esperar de mí desde el primer día</h2>
                 </div>
-            </article>
-        </section>
-        <section class="column column--right">
-            <!--skills-->
-            <article class="card">
-                <h2 class="card__title">Front End</h2>
-                <small data-section="skills" data-value="skills-time" ></small>
-                <div class="skills">
-                    <div class="skills__header">
-                        <span class="skills__start-level"></span>
-                        <span class="skills__start-level"></span>
-                    </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card reveal">
+                        <h3 data-section="highlights" data-value="feature1Title">Interfaces limpias y profesionales</h3>
+                        <p data-section="highlights" data-value="feature1Text">Cuido jerarquía, espaciado, contraste y estados para que el producto se vea serio, actual y fácil de usar.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3 data-section="highlights" data-value="feature2Title">Código claro y mantenible</h3>
+                        <p data-section="highlights" data-value="feature2Text">Trabajo con estructura ordenada, naming coherente y una base pensada para que sea sencillo iterar y mejorar.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3 data-section="highlights" data-value="feature3Title">Mentalidad de producto</h3>
+                        <p data-section="highlights" data-value="feature3Text">No me centro solo en que funcione: también pienso en rendimiento, claridad del mensaje y experiencia del usuario.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3 data-section="highlights" data-value="feature4Title">Aprendizaje rápido y actitud sólida</h3>
+                        <p data-section="highlights" data-value="feature4Text">Acepto feedback, me adapto rápido y disfruto convertir cada proyecto en una versión mejor de sí mismo.</p>
+                    </article>
                 </div>
-                <div class="skills">
-                    <div class="skills__item">
-                        <p class="skills__tech">HTML</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">CSS</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">JavaScript</p>
-                        <!--<div class="skills__bar skills__bar--70"></div>-->
-                    </div>
-                </div>    
-            </article>
-            <article class="card">
-                <h2 class="card__title" >Back End</h2>
-                <small data-section="skills" data-value="skills-time"></small>
-                <div class="skills">
-                    <div class="skills__header">
-                        <span class="skills__start-level"></span>
-                        <span class="skills__start-level"></span>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">PHP</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">SQL</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">Apache2</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
+            </section>
+
+            <section class="section" id="stack">
+                <div class="section-heading reveal">
+                    <p class="section-label" data-section="skills" data-value="label">Stack</p>
+                    <h2 data-section="skills" data-value="title">Tecnologías con las que ya puedo aportar valor</h2>
+                    <p class="section-copy" data-section="skills" data-value="intro">Combinación de frontend, backend y herramientas para construir proyectos completos y seguir creciendo dentro de un equipo.</p>
                 </div>
-            </article>
-            <article class="card">
-                <h2 class="card__title" data-section="skills" data-value="skills-title">Habilidades adicionales</h2>
-                <small data-section="skills" data-value="skills-time"></small>
-                <div class="skills">
-                    <div class="skills__header">
-                        <span class="skills__start-level"></span>
-                        <span class="skills__start-level"></span>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">React</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">Git</p>
-                        <!--<div class="skills__bar skills__bar--80"></div>-->
-                    </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card reveal">
+                        <h3 data-section="skills" data-value="frontendTitle">Frontend</h3>
+                        <p data-section="skills" data-value="frontendItems">HTML5, CSS3, JavaScript, React, diseño responsive, animaciones UI</p>
+                    </article>
+                    <article class="stack-card reveal">
+                        <h3 data-section="skills" data-value="backendTitle">Backend</h3>
+                        <p data-section="skills" data-value="backendItems">PHP, SQL, APIs REST, estructura de datos, lógica de negocio</p>
+                    </article>
+                    <article class="stack-card reveal">
+                        <h3 data-section="skills" data-value="workflowTitle">Workflow</h3>
+                        <p data-section="skills" data-value="workflowItems">Git, GitHub, consumo de JSON, organización de proyectos, mejora continua</p>
+                    </article>
                 </div>
-            </article>
-            <!--projects-->
-            <article class="card card--project-title">
-                <h1 data-section="project-header" data-value="project-header-title">Proyectos realizados</h1>
-            </article>
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/fragenspiel.jpg" alt="projecto" width="300" height="300" class="card__image">
+            </section>
+
+            <section class="section" id="projects">
+                <div class="section-heading reveal">
+                    <p class="section-label" data-section="projects" data-value="label">Trabajo seleccionado</p>
+                    <h2 data-section="projects" data-value="title">Proyectos que muestran mi evolución técnica</h2>
+                    <p class="section-copy" data-section="projects" data-value="intro">Cada proyecto refuerza una capacidad distinta: diseño responsive, lógica en JavaScript, componentes en React o estructura de contenido clara.</p>
                 </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2025</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>
-                        <span class="project__tag">JavaScript</span>
-                    </div>
-                    <h2 class="card__title" data-section="project6" data-value="project6-title">Juego de preguntas</h2>
-                    <p class="card__text" id="card__text1" data-section="project6" data-value="project6-descriptions">Este juego consiste en girar tres ruedas para        obtener tres preguntas en tres idiomas distintos, estos idiomas son ingles, aleman y español.
-                    Tambien tienes un temporizador que te indica el tiempo que resta y asi hacer el juego un poco mas divertido.</p>                    
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/georg_fragen/" class="button button--primary" target="_blank" rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/georg_fragen" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>              
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/fragenspiel.jpg" alt="Vista previa del proyecto Quiz Game" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2025</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item1Title">Quiz Game</h3>
+                            <p data-section="projects" data-value="item1Text">Juego interactivo con lógica de estado, temporizador y soporte multilingüe. Un proyecto enfocado en dinamismo, claridad visual y experiencia de usuario.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/georg_fragen/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/georg_fragen" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/todolist.jpg" alt="Vista previa del proyecto To Do List" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2024</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item2Title">To Do List</h3>
+                            <p data-section="projects" data-value="item2Text">Aplicación centrada en organización de tareas, flujo claro de interacción y una interfaz ligera para resolver una necesidad real de uso diario.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/to-do-list/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/to-do-list" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/tateti.jpg" alt="Vista previa del proyecto Ta Te Ti" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2024</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item3Title">Ta Te Ti</h3>
+                            <p data-section="projects" data-value="item3Text">Proyecto orientado a lógica de juego, control de estados y feedback inmediato al usuario en una experiencia simple pero bien resuelta.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/tateti/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/tateti" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/memory.jpg" alt="Vista previa del proyecto Memory Challenge" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2024</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item4Title">Memory Challenge</h3>
+                            <p data-section="projects" data-value="item4Text">Ejercicio de manipulación del DOM y dinámica visual pensado para ofrecer una interacción entretenida con reglas fáciles de entender.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/memorychallege/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/memorychallege" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/portada1.jpg" alt="Vista previa del proyecto Destino Aventura" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2024</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>JSON</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item5Title">Destino Aventura</h3>
+                            <p data-section="projects" data-value="item5Text">Landing orientada a conversión con estructura de contenido, propuesta visual turística y manejo de información externa en JSON.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/destinoaventura/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/destinoaventura" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__image">
+                            <img src="./assets/icons/solymar1.jpg" alt="Vista previa del proyecto Sol y Mar" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span>2023</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <h3 data-section="projects" data-value="item6Title">Sol y Mar</h3>
+                            <p data-section="projects" data-value="item6Text">Sitio corporativo responsive enfocado en presentación de servicios, estructura clara y una navegación pensada para reforzar confianza.</p>
+                            <div class="project-card__actions">
+                                <a class="button button--primary" href="https://webjaoc.github.io/sol-y-mar/" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="live">Demo</a>
+                                <a class="button button--secondary" href="https://github.com/Webjaoc/sol-y-mar" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="code">Código</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/todolist.jpg" alt="projecto" width="300" height="300" class="card__image">
+            </section>
+
+            <section class="section" id="journey">
+                <div class="section-heading reveal">
+                    <p class="section-label" data-section="journey" data-value="label">Trayectoria</p>
+                    <h2 data-section="journey" data-value="title">Una base técnica en crecimiento y una mentalidad profesional fuerte</h2>
                 </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2024</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>
-                        <span class="project__tag">React</span>
-                    </div>
-                    <h2 class="card__title" data-section="project4" data-value="project4-title">To do list</h2>
-                    <p class="card__text" id="card__text1" data-section="project4" data-value="project4-descriptions">La aplicación " To do list " permite crear y organizar listas de tareas mientras las vas escribiendo, facilitando la gestión de tus pendientes diarios. Es ideal para recordar lo que debes hacer, ayudándote a planificar y priorizar tus actividades de manera sencilla y eficiente.</p>            
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/to-do-list/" class="button button--primary" target="_blank" rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/to-do-list" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>                          
+
+                <div class="timeline">
+                    <article class="timeline-card reveal">
+                        <span class="timeline-card__meta" data-section="journey" data-value="item1Meta">Formación y práctica</span>
+                        <h3 data-section="journey" data-value="item1Title">Base sólida en desarrollo web</h3>
+                        <p data-section="journey" data-value="item1Text">He desarrollado proyectos reales con HTML, CSS, JavaScript, React, PHP y SQL, reforzando tanto la interfaz como la lógica y la organización del código.</p>
+                    </article>
+                    <article class="timeline-card reveal">
+                        <span class="timeline-card__meta" data-section="journey" data-value="item2Meta">Experiencia profesional previa</span>
+                        <h3 data-section="journey" data-value="item2Title">Disciplina, constancia y atención al detalle</h3>
+                        <p data-section="journey" data-value="item2Text">Mi trayectoria fuera del sector tech me dio responsabilidad, foco en calidad y capacidad para trabajar con procesos y objetivos concretos.</p>
+                    </article>
+                    <article class="timeline-card reveal">
+                        <span class="timeline-card__meta" data-section="journey" data-value="item3Meta">Próximo paso</span>
+                        <h3 data-section="journey" data-value="item3Title">Aportar en un equipo de desarrollo</h3>
+                        <p data-section="journey" data-value="item3Text">Busco una oportunidad donde seguir creciendo, colaborar con personas con experiencia y contribuir con trabajo serio desde el primer sprint.</p>
+                    </article>
                 </div>
-            </article>    
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/tateti.jpg" alt="projecto5" width="300" height="300" class="card__image">
+            </section>
+
+            <section class="contact-banner reveal" id="contact">
+                <p class="section-label" data-section="contact" data-value="label">Contacto</p>
+                <h2 data-section="contact" data-value="title">Si buscas una incorporación con hambre de crecer, hablemos.</h2>
+                <p data-section="contact" data-value="text">Estoy disponible para entrevistas, colaboraciones y oportunidades donde pueda seguir desarrollándome mientras entrego un trabajo serio y bien ejecutado.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="mailto:oyhenartjorge@gmail.com" data-section="contact" data-value="primaryCta">Enviar email</a>
+                    <a class="button button--secondary" href="https://github.com/Webjaoc" target="_blank" rel="noopener noreferrer" data-section="contact" data-value="secondaryCta">Ver GitHub</a>
                 </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2024</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>
-                        <span class="project__tag">React</span>               
-                    </div>
-                    <h2 class="card__title" data-section="project5" data-value="project5-title">Ta te ti</h2>
-                    <p class="card__text" id="card__text1" data-section="project5" data-value="project5-descriptions">El juego " Ta te ti " o tres en raya, se juega en un tablero de 3x3 donde dos jugadores, uno con "X" y otro con "O", intentan alinear tres símbolos en fila, columna o diagonal. Gana el primero en lograrlo. Es un pasatiempo divertido, simple, rápido y estratégico, ideal para desafiar la mente en cualquier momento.</p>        
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/tateti/" class="button button--primary" target="_blank" rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/tateti" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>                          
-                </div>
-            </article>
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/memory.jpg" alt="projecto3" width="300" height="300" class="card__image">
-                </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2024</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>
-                        <span class="project__tag">JavaScript</span>       
-                    </div>
-                    <h2 class="card__title" data-section="project3" data-value="project3-title">Memory Challenge</h2>
-                    <p class="card__text" id="card__text1" data-section="project3" data-value="project3-descriptions">El objetivo de
-                         divertirse con un juego de memory es estimular la mente y mejorar la memoria a través de la identificación 
-                         y emparejamiento de cartas. Ideal para momentos aburridos, ofrece entretenimiento y desafío, manteniendo 
-                         la mente activa y brindando satisfacción al completar parejas.</p>
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/memorychallege/" class="button button--primary" target="_blank" rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/memorychallege" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>                      
-                </div>
-            </article>
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/portada1.jpg" alt="projecto2" width="300" height="300" class="card__image">
-                </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2024</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>
-                        <span class="project__tag">JavaScript</span>
-                        <span class="project__tag">JSON</span>
-                    </div>
-                    <h2 class="card__title" data-section="project2" data-value="project2-title">Destino Aventura</h2>
-                    <p class="card__text" id="card__text1" data-section="project2" data-value="project2-descriptions">Bienvenido a 'Destino Aventura',
-                         tu destino para alojamientos vacacionales de ensueño. Ofrecemos una amplia variedad de opciones de hospedaje,
-                          desde acogedores apartamentos hasta lujosas villas. Nuestras tarifas se adaptan a todos los presupuestos,
-                           garantizando una estancia perfecta sin importar tus necesidades. Además, disponemos de una gama de extras
-                            para mejorar tu experiencia, como servicios de limpieza diaria, traslados al aeropuerto, y alquiler
-                             de equipos deportivos. En VacayStay, nos aseguramos de que cada detalle de tu viaje sea inolvidable.
-                              ¡Reserva hoy mismo!</p>
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/destinoaventura/" class="button button--primary" target="_blank"rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/destinoaventura" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>              
-                </div>
-            </article>
-            <article class="card card--project">
-                <div class="card__image-container" id="card__image-container">
-                    <img src="./assets/icons/solymar1.jpg" alt="projecto1" width="300" height="300" class="card__image">
-                </div>
-                <div class="project">
-                    <div class="project__tags">
-                        <span class="project__tag">2023</span>
-                        <span class="project__tag">HTML</span>
-                        <span class="project__tag">CSS</span>   
-                    </div>
-                    <h2 class="card__title" data-section="project" data-value="project-title">Sol y Mar</h2>
-                    <p class="card__text" id="card__text1" data-section="project" data-value="project-descriptions">La empresa "Sol y Mar" 
-                        de vacaciones a la carta ofrece viajes personalizados para satisfacer tus sueños. Con nosotros,
-                         puedes elegir cada detalle de tu experiencia: destinos, alojamientos, actividades y transporte.
-                          Ya sea que desees una escapada romántica, una aventura familiar o un viaje cultural, adaptamos
-                           cada itinerario a tus preferencias y presupuesto. La flexibilidad es clave; ajustamos los planes
-                            sobre la marcha según tus necesidades. Vive unas vacaciones únicas, diseñadas exclusivamente para ti,
-                             con la máxima comodidad y satisfacción.</p>
-                    <div class="buttons">
-                        <a href="https://webjaoc.github.io/sol-y-mar/" class="button button--primary" target="_blank" rel="noopener" >Demo</a>
-                        <a href="https://github.com/Webjaoc/sol-y-mar" class="button button--ghost" target="_blank" rel="noopener">Code</a>
-                    </div>              
-                </div>
-            </article>    
-            <article class="card card--project"></article>
-        </section>
-    </main>
-    <script src="./js/scripts.js"></script> 
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p><span id="year"></span> · <span data-section="footer" data-value="text">Diseñado y desarrollado por Jorge Oyhenart.</span></p>
+        </footer>
+    </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
