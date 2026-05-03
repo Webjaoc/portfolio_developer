@@ -326,7 +326,7 @@ const storageKeys = {
 };
 
 let currentLanguage = localStorage.getItem(storageKeys.language) || "es";
-let currentTheme = localStorage.getItem(storageKeys.theme) || "light";
+let currentTheme = localStorage.getItem(storageKeys.theme) || "dark";
 
 const applyTranslations = (language) => {
     const dictionary = translations[language] || translations.es;
